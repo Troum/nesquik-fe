@@ -1,29 +1,11 @@
-# scratch
+# Nesquik FE
 
-## Project setup
-```
-npm install
-```
+1. Склонируйте репозиторий
+2. Выполните команду ```npm install``` (необходимо наличие **NodeJS**)
+3. После этого откройте файл ```.env.production``` и замените указанный URL на необходимый (не забудьте про http или https)
+4. Скомпилируйте **build** с помощью команды ```npm run build```
+5. Перенесите содержимое из папки **dist** в корневой каталог для сайта на вашем сервере
+6. В итоге директория с сервером должна выглядеть следующим образом
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Image of structure]
+( https://i.ibb.co/FKZxd6P/2019-10-18-01-38-08.png )
