@@ -50,7 +50,9 @@
 </script>
 
 <style scoped>
-.rules-cards {
-    margin-top: -12em;
+@media (min-width: 576px) {
+    .rules-cards {
+        margin-top: -12em;
+    }
 }
 </style>
