@@ -333,3 +333,12 @@ button {
     font-size: 70%;
   }
 }
+
+.custom-file-input:lang(ru) ~ .custom-file-label::after {
+  content: 'Добавить';
+  background-color: #17a2b8;
+  color: #fff;
+  &:hover {
+    cursor: pointer;
+  }
+}

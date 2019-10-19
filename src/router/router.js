@@ -67,6 +67,16 @@ const router = new Router({
           }
         },
         {
+          path: '/admin/import',
+          name: 'admin.import',
+          component: () => import('../views/Import.vue'),
+          meta: {
+            middleware: [
+              auth
+            ]
+          }
+        },
+        {
           path: '/admin/register',
           name: 'admin.register',
           component: () => import('../views/Register.vue'),

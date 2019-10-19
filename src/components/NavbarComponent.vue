@@ -6,6 +6,7 @@
         b-collapse#nav( is-nav )
             b-navbar-nav
                 b-nav-item.text-white( @click="$router.push({name: 'admin.export'}).catch(err => {})") Выгрузить участников
+                b-nav-item.text-white( @click="$router.push({name: 'admin.import'}).catch(err => {})") Загрузить скретч-коды
                 b-nav-item.text-white( @click="$router.push({name: 'admin.results'}).catch(err => {})" ) Добавить результаты
                 b-nav-item.text-white( @click="$router.push({name: 'admin.register'}).catch(err => {})" ) Добавить участника
                 b-nav-item.text-white( @click="$router.push({name: 'admin'}).catch(err => {})" )( v-if="$route.name !== 'admin'" ) Панель администратора

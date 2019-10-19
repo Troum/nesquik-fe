@@ -162,7 +162,8 @@
                             this.empty = true;
                         })
                         .catch(error => {
-                            this.$handler.handleError(error.response.status)
+                            this.$handler.handleError(error.response.status);
+                            this.$root.$emit('error', error.response.data.error);
                         })
                 } else {
                     this.empty = false;
