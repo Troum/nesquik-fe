@@ -40,7 +40,7 @@
                     p-check.pretty.p-image.p-plain.p-smooth.p-bigger.mr-0( v-model="accept")
                         img.image( slot="extra" src="@/assets/images/check.png" )
                         | Я ознакомлен и согласен с&nbsp;
-                    router-link( to="/rules" ) правилами рекламной игры
+                    b-link.color.rules( href="/rules/rules-game.pdf" target="_blank") правилами рекламной игры
                 b-form-group.my-2.my-xl-4.text-center
                     b-button.register( v-if="needCheck" type="submit" size="lg" variant="info" :disabled="!accept") Зарегистрировать
                     b-button( v-else type="submit" size="lg" variant="info" ) Зарегистрировать

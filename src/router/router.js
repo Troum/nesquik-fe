@@ -17,7 +17,10 @@ const router = new Router({
     {
       path: '/rules',
       name: 'rules',
-      component: () => import('../views/Rules.vue')
+      beforeEnter() {                    
+        window.open("https://nesquik.specproagency.by/rules/rules-cert.pdf", 
+        '_blank');
+    } 
     },
     {
       path: '/login',
